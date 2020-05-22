@@ -1,0 +1,7 @@
+.red{
+    color: red;
+}
+
+#el1::before{
+    content: '-->';
+}
