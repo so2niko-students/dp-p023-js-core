@@ -1,0 +1,19 @@
+.todos-list{
+    width: 200px;
+    border: 1px solid grey;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todos-list li{
+    list-style-type: none;
+}
+
+.todos-list li{
+    margin-top: 15px;
+
+}
+
+.todos-list li.done{
+    text-decoration: line-through;
+}
