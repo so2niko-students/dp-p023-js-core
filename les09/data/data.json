@@ -1,0 +1,22 @@
+[
+    {
+        "text" : "Read new book",
+        "isDone" : true,
+        "id" : 0
+    }, 
+    {
+        "text" : "Add new bookmark to bookmark list",
+        "isDone" : false,
+        "id" : 1
+    },
+    {
+        "text" : "Buy a pet",
+        "isDone" : false,
+        "id" : 2
+    },
+    {
+        "text" : "Wash my hands",
+        "isDone" : true,
+        "id" : 3
+    }
+]
