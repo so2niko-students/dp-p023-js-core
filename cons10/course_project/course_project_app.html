@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style/course_project_app.css">
+</head>
+<body>
+    <ul class="todos-list"></ul>
+    <label for="al_is_done" id="txt_done" onclick="ontxt_doneClick()"> 
+        <b> Everything is done :) </b> 
+    </label>
+    <input type="checkbox" id="all_is_done">
+    <label for="new_task" id="txt_new_task"> <b> New task </b> </label>
+    <input type="text" id="new_task" onchange="generateListItem()">
+    <button id="add" onclick="add_new_task()"> <b> Add </b> </button>
+    <p id="txt-delete"> <b>Delete: </b>choose a task and press on the mouse right button </p>
+    <p id="statistics"> <b>Statistics</b></p>
+    <p id="statistics-done" ></p>
+    <p id="statistics-not-done" ></p>
+    <script src="course_project_app.js"></script>
+</body>
+</html>
