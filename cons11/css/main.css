@@ -1,0 +1,11 @@
+.lessons-table{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.lessons-day{
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+}
