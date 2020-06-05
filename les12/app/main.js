@@ -3,7 +3,7 @@ function getWeather(){
 
     const apiKey = 'de7094831f87b90c07b9cd28325af3c2';
     const location = inpCity.value;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
 
 
     fetch(url).then(req => {
@@ -21,7 +21,7 @@ function renderWeather(weather){
 
     const weatherHTML = `
     <h1>${weather.name} <span class="badge badge-primary">${weather.sys.country}</span></h1>
-        <h4><img src="http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png"> ${temp} °C</h4>
+        <h4><img src="https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png"> ${temp} °C</h4>
         <table class="table table-striped w-50">
             <tbody>
             <tr>
