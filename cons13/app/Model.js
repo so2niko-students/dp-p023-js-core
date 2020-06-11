@@ -1,5 +1,7 @@
 export default class Model{
     getWeather(location){
+        localStorage.setItem('location', location);
+
         const apiKey = 'de7094831f87b90c07b9cd28325af3c2';
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}`;
 
@@ -43,5 +45,11 @@ export default class Model{
         const myShift = d.getTimezoneOffset() * 60 * 1000;
         const ms = d.getTime() + timezone * 1000 + myShift;
         return new Date(ms);
+    }
+
+    prevLocation(){
+        const loc = localStorage.getItem('location');
+        
+        return loc === null ? 'Dnipro' : loc;
     }
 }
